@@ -302,15 +302,18 @@ sup {
 	}
 }
 </style>
-<title>[返回](index.html)</title>
+<title>常见问题</title>
 
 </head>
 <body>
 <h2><a href="index.html">返回</a></h2>
 
-<h1>FAQ常见问题</h1>
+<h1>常见问题</h1>
 
 <h2>泛商会POS</h2>
+
+<input type="text" placeholder="输入关键字搜索" id="faq-search-key">
+<button onclick="var faqSearchKey = document.querySelector('#faq-search-key').value; document.querySelector('#faq-search-key').value = ''; window.find(faqSearchKey, false, false, true);">搜索</button>
 
 <h3>Q1. 泛商汇POS是做什么的？</h3>
 
