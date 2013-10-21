@@ -989,7 +989,7 @@
 	<!--end back to top button-->
 	<!--start scripts - IMPORTANT: all scripts MUST be loaded after jquery-latest.js as now-->
 	<!--latest jQuery-->
-		<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-1.10.2.min.js"></script>
 	<!--main bootstrap js-->
 		<script src="js/bootstrap.min.js"></script>
 	<!--enable responsive features in IE8-->
@@ -1018,7 +1018,7 @@
 		<script src="js/toucheffects.js"></script>
 		<script src="js/modals.js"></script>
 	<!--about form-->
-		<script src="js/jquery.form.js" async="async"></script>
+		<script src="js/jquery.form.js" defer></script>
 	<!--menu close on select-->
 		<script>
 			if ($('.navbar-toggle:visible').length) {
@@ -1026,7 +1026,7 @@
 			}
 		</script>
 	<!--google analytics-->
-		<script type="text/javascript">
+		<script type="text/javascript" defer>
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-44688529-1']);
 			_gaq.push(['_trackPageview']);
@@ -1038,7 +1038,7 @@
 			})();
 		</script>
 	<!-- google map -->
-		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" defer></script>
 	<!--custom script-->
 		<script src="js/custom.js"></script>
 	<!--end scripts-->

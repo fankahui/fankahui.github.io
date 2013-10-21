@@ -152,10 +152,10 @@ function initializeMap() {
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-	
+
 	var marker = new google.maps.Marker({
     position: ourLatLng,
     map: map,
     title: '泛盈科技'
-	});	
+	});
 }
