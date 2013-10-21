@@ -126,18 +126,33 @@ textarea:focus, input:focus, a:focus, a:visited, *:focus {
 }
 
 /* ==== Intro ==== */
+@media (min-width: 600px) {
+	#slide_1 {
+	  background: #000 url("../img/slide_1.jpg") fixed no-repeat;
+  }
 
-#slide_1 {
-	background: #000 url("../img/slide_1.jpg") fixed no-repeat;
+  #slide_2 {
+	  background: #000 url("../img/slide_2.jpg") fixed no-repeat;
+  }
+
+  #slide_3 {
+	  background: #000 url("../img/slide_3.jpg") fixed no-repeat;
+  }
+}
+@media (max-width: 600px) {
+	#slide_1 {
+	  background: #000 url("../img-small/slide_1.jpg") fixed no-repeat;
+  }
+
+  #slide_2 {
+	  background: #000 url("../img-small/slide_2.jpg") fixed no-repeat;
+  }
+
+  #slide_3 {
+	  background: #000 url("../img-small/slide_3.jpg") fixed no-repeat;
+  }
 }
 
-#slide_2 {
-	background: #000 url("../img/slide_2.jpg") fixed no-repeat;
-}
-
-#slide_3 {
-	background: #000 url("../img/slide_3.jpg") fixed no-repeat;
-}
 
 @media (min-width: 1280px) {
 	#slide_1, #slide_2, #slide_3 {
@@ -148,6 +163,14 @@ textarea:focus, input:focus, a:focus, a:visited, *:focus {
 @media (max-width: 1024px) {
 	#slide_1, #slide_2, #slide_3 {
 		background-size: 1024px auto;
+		background-position: center top;
+		padding-top: 60px;
+	}
+}
+
+@media (max-width: 600px) {
+	#slide_1, #slide_2, #slide_3 {
+		background-size: 868px auto;
 		background-position: center top;
 		padding-top: 60px;
 	}
