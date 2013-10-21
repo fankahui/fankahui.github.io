@@ -313,7 +313,7 @@
 				<div class="row" id="signup">
 					<div class="col-lg-12 text-center">
 						<h1 class="text-center">开始使用泛卡汇</h1>
-						<form class="form-inline" role="form" action="#" method="post" id="signupForm">
+						<div class="form-inline" role="form" action="#" method="post" id="signupForm">
 						  <div class="form-group col-lg-4 col-sm-6">
 					      <input type="string" class="form-control" id="username" placeholder="请输入手机号作为用户名">
 						  </div>
@@ -324,9 +324,9 @@
 								<div class="message">
 									<div class="alert"></div>
 								</div>
-					      <button type="submit" class="btn btn-syndicate btn-block">免费注册</button>
+					      <button class="btn btn-syndicate btn-block" onclick="signupCRM();">免费注册</button>
 						  </div>
-						</form>
+						</div>
 					</div>
 				</div>
 				<div class="content-divider"></div>
@@ -532,7 +532,7 @@
 	<!-- gallery modals -->
 				<div class="row">
 					<!--start #stand gallery modal-->
-					<div id="stand" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="stand" aria-hidden="true">
+					<!-- <div id="stand" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="stand" aria-hidden="true">
 						<div class="modal-body">
 							<div class="container">
 								<div class="row">
@@ -588,10 +588,10 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<!--end #stand gallery modal-->
 					<!--start #stand2 gallery modal-->
-					<div id="stand2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="stand2" aria-hidden="true">
+					<!-- <div id="stand2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="stand2" aria-hidden="true">
 						<div class="modal-body">
 							<div class="container">
 								<div class="row">
@@ -643,10 +643,10 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<!--end #stand2 gallery modal-->
 					<!--start #printer58 gallery modal-->
-					<div id="printer58" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="printer58" aria-hidden="true">
+					<!-- <div id="printer58" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="printer58" aria-hidden="true">
 						<div class="modal-body">
 							<div class="container">
 								<div class="row">
@@ -702,10 +702,10 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<!--end #printer58 gallery modal-->
 					<!--start #miniserver gallery modal-->
-					<div id="miniserver" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="miniserver" aria-hidden="true">
+					<!-- <div id="miniserver" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="miniserver" aria-hidden="true">
 						<div class="modal-body">
 							<div class="container">
 								<div class="row">
@@ -761,10 +761,10 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<!--end #miniserver gallery modal-->
 					<!--start #cashbox gallery modal-->
-					<div id="cashbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="cashbox" aria-hidden="true">
+					<!-- <div id="cashbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="cashbox" aria-hidden="true">
 						<div class="modal-body">
 							<div class="container">
 								<div class="row">
@@ -820,10 +820,10 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<!--end #cashbox gallery modal-->
 					<!--start #opengroup gallery modal-->
-					<div id="opengroup" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="opengroup" aria-hidden="true">
+					<!-- <div id="opengroup" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="opengroup" aria-hidden="true">
 						<div class="modal-body">
 							<div class="container">
 								<div class="row">
@@ -882,7 +882,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<!--end #opengroup gallery modal-->
 				</div>
 				<div class="content-divider"></div>
@@ -985,13 +985,36 @@
 		</section>
 	<!--end footer section-->
 	<!--start back to top button-->
-		<a href="#intro" class="hidden-sm go-top" data-0="opacity: 0;" data-1000="opacity: 1;">返回顶部</a>
+	<a href="#intro" class="hidden-sm go-top" data-0="opacity: 0;" data-1000="opacity: 1;">返回顶部</a>
 	<!--end back to top button-->
 	<!--start scripts - IMPORTANT: all scripts MUST be loaded after jquery-latest.js as now-->
 	<!--latest jQuery-->
-		<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+	  function signupCRM() {
+	  	'use strict';
+	  	console.log('start signup');
+
+	  	$.ajax({
+	  		type: 'POST',
+	  		url: 'http://42.121.124.27:81/users',
+	  		params: {
+	  			name: document.querySelector('#username').value,
+	  			username: document.querySelector('#username').value,
+	  			password: document.querySelector('#password').value,
+	  		},
+	  		success: function (response) {
+	  			// 自动登录
+	  			// window.location.href = '';
+	  		},
+	  		error: function (error) {
+	  			console.log('signup error');
+	  		}
+	  	})
+	  }
+	</script>
 	<!--main bootstrap js-->
-		<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<!--enable responsive features in IE8-->
 	<!--[if lte IE 8]>
 		<script src="js/respond.min.js"></script>
@@ -1018,7 +1041,7 @@
 		<script src="js/toucheffects.js"></script>
 		<script src="js/modals.js"></script>
 	<!--about form-->
-		<script src="js/jquery.form.js" async="async"></script>
+		<script src="js/jquery.form.js" defer></script>
 	<!--menu close on select-->
 		<script>
 			if ($('.navbar-toggle:visible').length) {
@@ -1026,7 +1049,7 @@
 			}
 		</script>
 	<!--google analytics-->
-		<script type="text/javascript">
+		<script type="text/javascript" defer>
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-44688529-1']);
 			_gaq.push(['_trackPageview']);
@@ -1038,7 +1061,7 @@
 			})();
 		</script>
 	<!-- google map -->
-		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" defer></script>
 	<!--custom script-->
 		<script src="js/custom.js"></script>
 	<!--end scripts-->
