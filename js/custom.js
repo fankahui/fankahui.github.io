@@ -107,14 +107,14 @@ $(window).load(function() {
   });
 
   //contact form
-  $(document).ready(function() {
-    var options = {
-      target: '.message .alert',
-      beforeSubmit: showRequest,
-      success: showResponse
-    };
-    $('#contactForm').ajaxForm(options);
-  });
+  // $(document).ready(function() {
+  //   var options = {
+  //     target: '.message .alert',
+  //     beforeSubmit: showRequest,
+  //     success: showResponse
+  //   };
+  //   $('#contactForm').ajaxForm(options);
+  // });
 
   function showRequest(formData, jqForm, options) {
     var queryString = $.param(formData);

@@ -128,28 +128,28 @@ textarea:focus, input:focus, a:focus, a:visited, *:focus {
 /* ==== Intro ==== */
 @media (min-width: 600px) {
 	#slide_1 {
-	  background: #000 url("../img/slide_1.jpg") fixed no-repeat;
+	  background: #000 url("http://haoxin.oss-cn-hangzhou.aliyuncs.com/slide_1.jpg") fixed no-repeat;
   }
 
   #slide_2 {
-	  background: #000 url("../img/slide_2.jpg") fixed no-repeat;
+	  background: #000 url("http://haoxin.oss-cn-hangzhou.aliyuncs.com/slide_2.jpg") fixed no-repeat;
   }
 
   #slide_3 {
-	  background: #000 url("../img/slide_3.jpg") fixed no-repeat;
+	  background: #000 url("http://haoxin.oss-cn-hangzhou.aliyuncs.com/slide_3.jpg") fixed no-repeat;
   }
 }
 @media (max-width: 600px) {
 	#slide_1 {
-	  background: #000 url("../img-small/slide_1.jpg") fixed no-repeat;
+	  background: #000 url("http://haoxin.oss-cn-hangzhou.aliyuncs.com/small_slide_1.jpg") fixed no-repeat;
   }
 
   #slide_2 {
-	  background: #000 url("../img-small/slide_2.jpg") fixed no-repeat;
+	  background: #000 url("http://haoxin.oss-cn-hangzhou.aliyuncs.com/small_slide_2.jpg") fixed no-repeat;
   }
 
   #slide_3 {
-	  background: #000 url("../img-small/slide_3.jpg") fixed no-repeat;
+	  background: #000 url("http://haoxin.oss-cn-hangzhou.aliyuncs.com/small_slide_3.jpg") fixed no-repeat;
   }
 }
 
@@ -359,11 +359,11 @@ textarea:focus, input:focus, a:focus, a:visited, *:focus {
 /* ==== Header backgrounds ==== */
 
 #passpro-header {
-	background: #fff url("../img/headers/passpro.jpg") center top no-repeat;
+	background: #fff url("http://haoxin.oss-cn-hangzhou.aliyuncs.com/passpro.jpg") center top no-repeat;
 }
 
 #team-header {
-	background: #fff url("../img/headers/team.jpg") center top no-repeat;
+	background: #fff url("http://haoxin.oss-cn-hangzhou.aliyuncs.com/team.jpg") center top no-repeat;
 }
 
 @media (min-width: 1400px) {
