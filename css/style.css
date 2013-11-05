@@ -1805,3 +1805,15 @@ form .btn {
 	max-width: 50px;
 	width: fit-content;margin-left: auto;margin-right: auto;
 }
+
+.navbar-nav li a {
+	font-weight: bolder;
+}
+
+.hx-img-responsive {
+	max-width: 260px;
+	max-height: 260px;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
