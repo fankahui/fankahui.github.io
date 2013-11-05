@@ -1817,3 +1817,19 @@ form .btn {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.qq-chat {
+	position: fixed;
+	bottom: 5em;
+	right: 1em;
+	text-decoration: none;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.3);
+	font-size: 13px;
+	padding: 1em;
+}
+
+.qq-chat:hover {
+	background: rgba(0, 0, 0, 0.4);
+	color: #fff;
+}
