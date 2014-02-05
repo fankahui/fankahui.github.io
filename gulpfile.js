@@ -33,10 +33,8 @@ gulp.task('lr-server', function() {
   });
 })
 
-gulp.task('build', function() {
-  gulp.run('lr-server', 'scripts', 'styles');
+gulp.task('build', ['lr-server', 'scripts', 'styles'], function() {
 })
 
-gulp.task('default', function() {
-  gulp.run('lr-server');
+gulp.task('default', ['lr-server'], function() {
 })

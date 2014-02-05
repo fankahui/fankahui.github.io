@@ -178,7 +178,7 @@ textarea:focus, input:focus, a:focus, a:visited, *:focus {
 
 /* ==== Services / Details / Customers ==== */
 
-#services {
+#products {
 	background: #f7f8f9;
 	padding: 90px 0px 0px 0px;
 	text-align: center;
@@ -234,7 +234,7 @@ textarea:focus, input:focus, a:focus, a:visited, *:focus {
 	background-image: linear-gradient(left, #E75239 0%,#E75239 12.5%,#FF961C 12.5%,#FF961C 25%,#FFCC27 25%,#FFCC27 37.5%,#FCE62F 37.5%,#FCE62F 50%,#CDE35B 50%,#CDE35B 62.5%,#82CC33 62.5%,#82CC33 75%,#41BECE 75%,#41BECE 87.5%,#049CDB 87.5%,#049CDB 100%);
 }
 
-#services h3 {
+#products h3 {
 	font-size: 21px;
 	font-weight: 200;
 	line-height: 1;
@@ -250,7 +250,7 @@ textarea:focus, input:focus, a:focus, a:visited, *:focus {
 	-webkit-text-stroke: 0.03em #25272B;
 }
 
-#services h5, #details h5 {
+#products h5, #details h5 {
 	font-size: 13px;
 	color: #bbbdc0;
 	font-weight: 400;
@@ -258,11 +258,11 @@ textarea:focus, input:focus, a:focus, a:visited, *:focus {
 	letter-spacing: 1px;
 }
 
-#services p, #details p {
+#products p, #details p {
 	margin: 15px 0 35px 0;
 }
 
-#services i {
+#products i {
 	color: #bbbdc0;
 	font-size: 60px;
 	line-height: 1.2em !important;
@@ -292,24 +292,24 @@ textarea:focus, input:focus, a:focus, a:visited, *:focus {
 	font-size: 1.4em;
 }
 
-#services i:hover {
+#products i:hover {
 	border: 0px dotted rgba(187, 189, 192, 1);
 	padding: 25px;
 }
 
-#services i.blue:hover, #details i.blue {
+#products i.blue:hover, #details i.blue {
 	color: #00a9df;
 }
 
-#services i.green:hover, #details i.green {
+#products i.green:hover, #details i.green {
 	color: #8dc838;
 }
 
-#services i.red:hover, #details i.red {
+#products i.red:hover, #details i.red {
 	color: #DD1812;
 }
 
-#services i.yellow:hover, #details i.yellow {
+#products i.yellow:hover, #details i.yellow {
 	color: #FCCA03;
 }
 
@@ -362,12 +362,17 @@ textarea:focus, input:focus, a:focus, a:visited, *:focus {
 	background: #fff url("http://fankahui.oss-cn-hangzhou.aliyuncs.com/passpro.jpg") center top no-repeat;
 }
 
+#future-header {
+	background: #fff url("http://fankahui.oss-cn-hangzhou.aliyuncs.com/passpro.jpg") center top no-repeat;
+}
+
 #team-header {
 	background: #fff url("http://fankahui.oss-cn-hangzhou.aliyuncs.com/team.jpg") center top no-repeat;
 }
 
 @media (min-width: 1400px) {
 	#passpro-header,
+	#future-header,
 	#team-header {
 		background-size: cover;
 	}
@@ -375,6 +380,7 @@ textarea:focus, input:focus, a:focus, a:visited, *:focus {
 
 @media (max-width: 767px) {
 	#passpro-header,
+	#future-header,
 	#team-header {
 		background-size: cover;
 	}
