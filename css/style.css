@@ -1581,6 +1581,18 @@ form .btn {
 	-webkit-text-stroke: 0.01em #fff;
 }
 
+.pricing-table i.red {
+	color: #DD1812;
+}
+
+.pricing-table i.yellow {
+	color: #FCCA03;
+}
+
+.pricing-table i.green {
+	color: #8dc838;
+}
+
 .pricing-table h2 {
 	-webkit-text-stroke: 0.02em #25272B;
 }
