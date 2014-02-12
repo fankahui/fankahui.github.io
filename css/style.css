@@ -358,16 +358,12 @@ textarea:focus, input:focus, a:focus, a:visited, *:focus {
 
 /* ==== Header backgrounds ==== */
 
-#passpro-header {
-	background: #fff url("http://fankahui.oss-cn-hangzhou.aliyuncs.com/passpro.jpg") center top no-repeat;
-}
-
 #future-header {
 	background: #fff url("http://fankahui.oss-cn-hangzhou.aliyuncs.com/passpro.jpg") center top no-repeat;
 }
 
-#team-header {
-	background: #fff url("http://fankahui.oss-cn-hangzhou.aliyuncs.com/team.jpg") center top no-repeat;
+#about-header {
+	background: #fff url("http://fankahui.oss-cn-hangzhou.aliyuncs.com/location.png") center top no-repeat;
 }
 
 @media (min-width: 1400px) {

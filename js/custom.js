@@ -138,7 +138,7 @@ $(window).load(function() {
     });
   };
 
-	initializeMap();
+  // initializeMap();
 });
 
 function initializeMap() {
