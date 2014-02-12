@@ -7,7 +7,7 @@ var lr = require('tiny-lr');
 var server = lr();
 
 gulp.task('scripts', function() {
-  gulp.src(['app/js/**/*.js'])
+  gulp.src(['js/**/*.js'])
     .pipe(browserify())
     .pipe(concat('dest.js'))
     .pipe(gulp.dest('build'))
@@ -15,7 +15,7 @@ gulp.task('scripts', function() {
 })
 
 gulp.task('styles', function() {
-  gulp.src(['app/css/**/*.css'])
+  gulp.src(['css/**/*.css'])
     .pipe(styl({
       compress: true
     }))
