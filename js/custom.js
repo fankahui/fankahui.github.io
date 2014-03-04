@@ -50,8 +50,8 @@ $(document).ready(function() {
   var carousels = [
     'intro',
     'content',
-    'modal',
-    'header_1',
+    'future',
+    'header_future',
     'header_3'
   ];
 
@@ -84,6 +84,7 @@ $(document).ready(function() {
       forceHeight: false
     });
   }
+
 });
 
 
@@ -138,6 +139,7 @@ $(window).load(function() {
     });
   };
 
+  $("img.lazy").lazyload({threshold: 200});
   // initializeMap();
 });
 
