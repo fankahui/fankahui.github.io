@@ -457,7 +457,7 @@ textarea:focus, input:focus, a:focus, a:visited, *:focus {
 	margin: 15px 0 60px 0;
 }
 
-.content .icons .col-lg-2 i {
+.content .icons .col-lg-2 i, .modal-body .icons .col-lg-2 i {
 	display: block;
 	color: #00a9df;
 	font-size: 52px;
