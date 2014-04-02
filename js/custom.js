@@ -139,7 +139,7 @@ $(window).load(function() {
     });
   };
 
-  $("img.lazy").lazyload({threshold: 200});
+  $("img.lazy").lazyload({threshold: 800});
   // initializeMap();
 });
 
