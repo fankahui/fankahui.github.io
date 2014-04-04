@@ -912,6 +912,11 @@ form .btn {
 	}
 }
 
+@media (max-width: 639px) {
+	.hidden-sm {
+		display: none;
+	}
+}
 .navbar-toggle {
 	margin: 5px 0;
 	border-radius: 0;
