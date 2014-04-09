@@ -1414,7 +1414,7 @@ body .wpb_gallery_slides ul li,
 #content .wpb_text_column *:last-child,
 .wpb_toggle_content p:last-child {
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .wpb_content_element,
 ul.wpb_thumbnails-fluid > li,
